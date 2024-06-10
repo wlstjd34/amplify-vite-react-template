@@ -4,7 +4,7 @@ import { env } from '$amplify/env/runbatch';
 import { IApartResponse } from './IApartResponse';
 import { generateClient } from 'aws-amplify/data';
 import { type Schema } from '../../data/resource'
-import { HistoryDto, HistoryKey, HistoryData } from './historyDto';
+import { HistoryDto, HistoryKey, HistoryData } from './HistoryDto';
 
 const client = generateClient<Schema>();
 
