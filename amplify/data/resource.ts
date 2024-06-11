@@ -17,8 +17,8 @@ const schema = a.schema({
       housingType: a.integer(),
       dongCode: a.integer(),
     })
-    .authorization(allow => [allow.resource(postConfirmation)])
-});
+    .authorization(allow => [allow.publicApiKey()])
+}).authorization((allow) => [allow.resource(postConfirmation)]);
 
 export type Schema = ClientSchema<typeof schema>;
 
